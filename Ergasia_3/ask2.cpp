@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <sstream>
+#include <fstream>
  using namespace std;
  struct graph{
      int v;
@@ -88,13 +90,31 @@ void delete_graph(graph g){
 
 
  int main(){
-     int var;
      freopen("dag1.txt", "r", stdin);
+     fstream filestr;
+     string buffer;
+     filestr.open("results.txt",ios::out);
+     if(!filestr.is_open()){
+         cerr << "File not found!" << endl;
+         exit(-1);
+     }
+     string matrix;
+     string vertex;
      graph g = read_graph();
+     for(int i=0; i< g.v; i++){
+         filestr << g.vertex_names[i] << "-> ";
+         for (int j=0; j<g.v; j++){
+             if(g.matrix[i][j] == 1){
+                 filestr << g.vertex_names[j] << " ";
+             }
+         }
+         filestr << endl;
+     }
+     filestr.close();
      print_graph(g);
      topological_sort(g);
+     
      delete_graph(g);
      cout << "memory freed" << endl;
-     cin >> var;
  }
 
