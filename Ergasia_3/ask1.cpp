@@ -77,7 +77,7 @@ int main(){
         now=time(0);
         timeinto=localtime(&now);
         strftime(buffer,80,"%F %T",timeinto);
-        a_block.timestamp =buffer;
+        a_block.timestamp=buffer;
         a_block.data = texts[i];
         a_block.nouce=0;
         a_block.previous_hash=hash_combined(previous_block);
