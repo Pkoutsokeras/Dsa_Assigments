@@ -9,6 +9,7 @@
      string *vertex_names;
      int **matrix;
  };
+ //reads the graph file and inserts to arrays
  graph read_graph()
  {
      graph g;
@@ -29,7 +30,7 @@
      return g;
  }
 
-
+//prints the graph 
  void print_graph(graph g){
      for(int i=0; i<g.v; i++){
          cout << g.vertex_names[i] << " -> ";
@@ -90,19 +91,15 @@ void delete_graph(graph g){
 
 
  int main(){
-     freopen("dag1.txt", "r", stdin);
-     fstream filestr;
+     freopen("dag1.txt", "r", stdin); //opening the file
+     fstream filestr; //fstream for the results output
      string buffer;
-     filestr.open("results.txt",ios::out);
-     if(!filestr.is_open()){
-         cerr << "File not found!" << endl;
-         exit(-1);
-     }
+     filestr.open("results.txt",ios::out); //creates the txt file for the results
      string matrix;
      string vertex;
      graph g = read_graph();
-     for(int i=0; i< g.v; i++){
-         filestr << g.vertex_names[i] << "-> ";
+     for(int i=0; i< g.v; i++){       //inserts the results to results.txt 
+         filestr << g.vertex_names[i] << "-> "; 
          for (int j=0; j<g.v; j++){
              if(g.matrix[i][j] == 1){
                  filestr << g.vertex_names[j] << " ";
@@ -111,10 +108,10 @@ void delete_graph(graph g){
          filestr << endl;
      }
      filestr.close();
-     print_graph(g);
+     print_graph(g); //prints the results 
      topological_sort(g);
-     
      delete_graph(g);
      cout << "memory freed" << endl;
+     system("pause");
  }
 
