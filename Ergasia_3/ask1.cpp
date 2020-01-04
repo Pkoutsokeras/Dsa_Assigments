@@ -21,11 +21,11 @@ size_t hash_combined(block &a_block){
 }
 //prints the results 
 void print_block(block &a_block){
-    cout << "ID " << a_block.id << endl;
-    cout << "TimeStamp " << a_block.timestamp << endl;
-    cout << "Data " << a_block.data << endl;
-    cout << "Nouce " << a_block.nouce << endl;
-    cout << "previous Hash " << a_block.previous_hash << endl;
+    cout << "ID : " << a_block.id << endl;
+    cout << "TimeStamp : " << a_block.timestamp << endl;
+    cout << "Data : " << a_block.data << endl;
+    cout << "Nouce : " << a_block.nouce << endl;
+    cout << "previous Hash : " << a_block.previous_hash << endl;
     cout << endl;
 }
 //changing the value of blockchain
@@ -74,10 +74,10 @@ int main(){
     for(int i=0; i<7; i++){
         block a_block;
         a_block.id= i+1;
-        now = time(0);
-        timeinto = localtime(&now);
+        now=time(0);
+        timeinto=localtime(&now);
         strftime(buffer,80,"%F %T",timeinto);
-        a_block.timestamp = buffer;
+        a_block.timestamp =buffer;
         a_block.data = texts[i];
         a_block.nouce=0;
         a_block.previous_hash=hash_combined(previous_block);
