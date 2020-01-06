@@ -5,16 +5,16 @@
 
 
 
-# [Assigment 1](https://github.com/Pkoutsokeras/Dsa_Assigments/tree/master/Ergasia_1)
+# [Assigment 1](https://github.com/Pkoutsokeras/Dsa_Assigments/tree/master/Assigment_1)
 
 
-* [ask1.cpp](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Ergasia_1/ask1.cpp)
+* [Random_Numbers](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Assigment_1/Random_Numbers.cpp)
 
 Writes a program that fills an array in size of 100 elements with random integers **between** 0 and 1,000.
 
 Make a function that inserts as parameter the array and returns the **minimum**,**maximum** and **average** of the array.
 
-* [ask2.cpp](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Ergasia_1/ask2.cpp)
+* [Population_Figures_By_Country](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Assigment_1/Population_Figures_By_Country.cpp)
  
  Write a programm that reads a **CSV** file named  [«Population figures by Country»](https://datahub.io/JohnSnowLabs/population-figures-by-country)
  
@@ -23,15 +23,15 @@ Make a function that inserts as parameter the array and returns the **minimum**,
  
  ---
  
- # [Assigment 2](https://github.com/Pkoutsokeras/Dsa_Assigments/tree/master/Ergasia_2)
+ # [Assigment 2](https://github.com/Pkoutsokeras/Dsa_Assigments/tree/master/Assigment_2)
   
-* [ask1.cpp](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Ergasia_2/ask1.cpp)
+* [George_Orwell_count](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Assigment_2/George_Orwell_count.cpp)
 
 Write a programm that reads **ALL** the words of a text and prints how many times the every word exists in *ascending order*.
 Use as input the Book [1984](http://gutenberg.net.au/ebooks01/0100021.txt) Written by *George Orwell*.
 First of all, we need to convert from **lowercase** to **uppercase**.
 
-* [ask2.cpp](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Ergasia_2/ask2.cpp)
+* [double_linked_list](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Assigment_2/double_linked_list.cpp)
 
   Create a double linked list that supports : 
   * Insert element at front
@@ -40,7 +40,7 @@ First of all, we need to convert from **lowercase** to **uppercase**.
   * Print list from the start to end
   * Print list **Reverse**
   
-  1. Read the data from the file [students.txt](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Ergasia_2/students.txt) 
+  1. Read the data from the file [students.txt](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Assigment_2/students.txt) 
   and isnsert to double linked list. Then print the list from *start* to *end*
   2. Insert in the start of the list the "011 iasonas 3 CS 7.0" and in the end of the list insert the element "012 electra 5 CE 6.0"
   3. Delete the element with **ID** 005. Then prints the list from start to end.
@@ -48,9 +48,9 @@ First of all, we need to convert from **lowercase** to **uppercase**.
   
   **Repeat the steps using the double linked list that contains STL**
   
-  # [Assigment 3](https://github.com/Pkoutsokeras/Dsa_Assigments/tree/master/Ergasia_3)
+  # [Assigment 3](https://github.com/Pkoutsokeras/Dsa_Assigments/tree/master/Assigment_3)
   
-  * [ask1.cpp](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Ergasia_3/ask1.cpp)
+  * [Blockchain](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Assigment_3/blockchain.cpp)
   
   Write a programm that creates a simple [blockchain](https://en.wikipedia.org/wiki/Blockchain).
   
@@ -82,11 +82,11 @@ First of all, we need to convert from **lowercase** to **uppercase**.
 
  vii. change the next-to-last block with the data `Bob pays 5000 euros to David` and check the valid of blockchain again.
 
-   * [ask2.cpp](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Ergasia_3/ask2.cpp)  
+   * [DAG](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Assigment_3/DAG.cpp)  
   Write the [algorithm of Kahn](https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/) for the topological sort Directed Acyclic Graphs. The graphs are recorded in adjacency arrays. Here is an **Example** *:*
 
       ![alt text](https://i.ibb.co/8Pv0MyT/Screenshot-from-2020-01-06-00-48-20.png)
 
-1. Read the [file](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Ergasia_3/dag1.txt) that stores a DAG.
-2. Develop the Algorithm topological sort of Kahn and Record the [*Results*](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Ergasia_3/results.txt) in a text file.
+1. Read the [file](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Assigment_3/dag1.txt) that stores a DAG.
+2. Develop the Algorithm topological sort of Kahn and Record the [*Results*](https://github.com/Pkoutsokeras/Dsa_Assigments/blob/master/Assigment_3/results.txt) in a text file.
  
